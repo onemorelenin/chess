@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple chess</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="box col-12 col-sm-12 col-md-8 col-lg-10">
+        <div class="col-6 col-sm-3">
             <div id="board" class="board"></div>
         </div>
-        <div class="box col-12 col-sm-12 col-md-8 col-lg-10">
+        <div class="w-100"></div>
+        <div class="col-6 col-sm-3">
             <div class="info">
-                Search depth:
+                <!-- <p>Search depth:</p> -->
                 <select id="search-depth">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -24,13 +26,13 @@
                     <option value="5">5</option>
                 </select>
         
-                <br>
+                <!-- <br> -->
                 <!-- <span>Positions evaluated: <span id="position-count"></span></span> -->
-                <br>
-                <span>Time: <span id="time"></span></span>
-                <br>
+                <!-- <br> -->
+                <!-- <span>Time: <span id="time"></span></span> -->
+                <!-- <br> -->
                 <!-- <span>Positions/s: <span id="positions-per-s"></span> </span> -->
-                <br>
+                <!-- <br> -->
                 <br>
                 <div id="move-history" class="move-history"></div>
             </div>
@@ -41,8 +43,5 @@
 <script src="lib/chessboardjs/js/chess.js"></script>
 <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
 <script src="script.js"></script>
-<script>
-
-</script>
 </body>
 </html>
