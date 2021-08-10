@@ -18,3 +18,9 @@ body {
     color: #36a8f1;
     text-align: center;
 }
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #36a8f1;
+}
