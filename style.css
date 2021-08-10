@@ -4,7 +4,9 @@ body {
 
 .board {
     width: 400px;
-    margin: auto
+    margin: auto;
+    margin-top: 2px;
+    margin-left: 0px;
 }
 
 .info {
